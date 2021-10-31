@@ -10,8 +10,18 @@
 | ![](https://github.com/ledoare/pxt-motorbit-IR/raw/master/irControler.png) | ![](https://github.com/ledoare/pxt-motorbit-IR/raw/master/motorbit.png) |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
 |                                            _Télécommande Mini Remote_                                            |                                   _MotorBit_                                   |
+## Extension for Emakefun Motorbit
 
-
+    Use MakeCode to program your Microbit+Motorbit -> https://makecode.microbit.org/
+    
+    On your MakeCode Project :
+    - click on Menu : Advanced / Extensions
+    
+    - search for https://github.com/ledoare/pxt-motorbit-IR
+    to install infrared receiver extension
+    
+    - search for https://github.com/emakefun/pxt-motorbit
+    to install main Motorbit extension
 
 # IR Remote Receiver Module and Controller Kit
 
@@ -43,20 +53,6 @@ Some sellers could print their logo on controller, but functionality should be s
 * **[ transmission distance ]** cca 8 m (specific and surroundings, the receiver sensitivity and other factors)
 
 # Documentation
-
-
-## Extension for Emakefun Motorbit
-
-    Use MakeCode to program your Microbit+Motorbit -> https://makecode.microbit.org/
-    
-    On your MakeCode Project :
-    - click on Menu : Advanced / Extensions
-    
-    - search for https://github.com/ledoare/pxt-motorbit-IR
-    to install infrared receiver extension
-    
-    - search for https://github.com/emakefun/pxt-motorbit
-    to install main Motorbit extension
 
 ## Mini Remote IR codes
 
