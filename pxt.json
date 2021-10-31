@@ -10,6 +10,7 @@
         "README.md",
         "irVS1838.ts",
         "irControllerDefinition.ts",
+        "_locales/cs/pxt-motorbit-IR-strings.json",
         "_locales/de/pxt-motorbit-IR-strings.json",
         "_locales/fr/pxt-motorbit-IR-strings.json"
     ],
