@@ -1,7 +1,7 @@
 {
-    "name": "IR Remote Receiver and Controller Kit",
-    "version": "2.0.0",
-    "description": "MakeCode extension for IR receiver VS1838B HX1838 and Mini Slim controller",
+    "name": "Emakefun Motorbit IR Remote Receiver",
+    "version": "0.1.1",
+    "description": "MakeCode extension for IR receiver and Mini remote controller",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -9,7 +9,9 @@
     "files": [
         "README.md",
         "irVS1838.ts",
-        "irControllerDefinition.ts"
+        "irControllerDefinition.ts",
+        "_locales/de/pxt-motorbit-IR-strings.json",
+        "_locales/fr/pxt-motorbit-IR-strings.json"
     ],
     "testFiles": [
         "test.ts"
