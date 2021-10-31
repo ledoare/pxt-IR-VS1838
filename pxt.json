@@ -1,6 +1,6 @@
 {
     "name": "Emakefun Motorbit IR Remote Receiver",
-    "version": "0.1.1",
+    "version": "3.0.0",
     "description": "MakeCode extension for IR receiver and Mini remote controller",
     "license": "MIT",
     "dependencies": {
