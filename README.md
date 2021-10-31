@@ -1,6 +1,18 @@
+# MakeCode extension for Emakefun Motorbit 1.0
+# Infrared receptor with a slim NEC compatible IR remote
+
+[![Build Status](https://travis-ci.org/1010Technologies/pxt-makerbit-ir-receiver.svg?branch=master)](https://travis-ci.org/1010Technologies/pxt-makerbit-ir-receiver)
+* Based on <b>1010Technologies/pxt-makerbit-ir-receiver</b>
+------------------
+
+
+| ![](https://github.com/ledoare/pxt-motorbit-IR/raw/master/irController.png) | ![](https://github.com/ledoare/pxt-motorbit-IR/raw/master/motorbit.png) |
+| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
+|                                            _Télécommande Mini Remote_                                            |                                   _MotorBit_                                   |
+
+
+
 # IR Remote Receiver Module and Controller Kit
-![Build status badge](https://github.com/BrickHackers/pxt-IR-VS1838/workflows/MakeCode/badge.svg)
-based on [MakerBit IR Receiver](https://github.com/1010Technologies/pxt-makerbit-ir-receiver) by [1010Technologies](https://github.com/1010Technologies)
 
 MakeCode extension for set of IR receiver VS1838B HX1838 and Mini Slim controller (product name can vary depending on the seller - see pictures bellow).
 Kit usually includes 5mm IR LED for construction of your own transmiter.
@@ -30,23 +42,51 @@ Some sellers could print their logo on controller, but functionality should be s
 * **[ transmission distance ]** cca 8 m (specific and surroundings, the receiver sensitivity and other factors)
 
 # Documentation
-> Open this page at [https://github.com/BrickHackers/pxt-IR-VS1838](https://github.com/BrickHackers/pxt-IR-VS1838)
-
-## Use as Extension
-This repository can be added as an extension in MakeCode.
-* open https://makecode.microbit.org/
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/BrickHackers/pxt-IR-VS1838** and import the IR VS1838 extension
 
 
-## irVS1838.connectIrReceiver
+## Extension for Emakefun Motorbit
+
+    Use MakeCode to program your Microbit+Motorbit -> https://makecode.microbit.org/
+    
+    On your MakeCode Project :
+    - click on Menu : Advanced / Extensions
+    
+    - search for https://github.com/ledoare/pxt-motorbit-IR
+    to install infrared receiver extension
+    
+    - search for https://github.com/emakefun/pxt-motorbit
+    to install main Motorbit extension
+
+## Mini Remote IR codes
+
+* (1)-162
+* (2)-98
+* (3)-226
+* (4)-34
+* (5)-2
+* (6)-194
+* (7)-224
+* (8)-168
+* (9)-144
+* (0)-152
+* (*)-104
+* (#)-176
+* (up)-24
+* (down)-74
+* (left)-16
+* (right)-90
+* (ok)-56
+
+## makerbit.connectIrReceiver
 
 Connects to the IR receiver module at the specified pin.
+<p><b>On Emakefun Motorbit, onboard IR receiver is assigned to pin P1.</b>
+but you can plug any other IR receiver on another pin </p> 
 
 ```sig
-irVS1838.connectIrReceiver(DigitalPin.P0)
+makerbit.connectIrReceiver(DigitalPin.P1, IrProtocol.NEC)
 ```
+
 
 ### Parameters
 
