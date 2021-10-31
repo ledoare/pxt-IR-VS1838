@@ -3,10 +3,11 @@
 
 [![Build Status](https://travis-ci.org/1010Technologies/pxt-makerbit-ir-receiver.svg?branch=master)](https://travis-ci.org/1010Technologies/pxt-makerbit-ir-receiver)
 * Based on <b>1010Technologies/pxt-makerbit-ir-receiver</b>
+* and <b>BrickHackers/pxt-IR-VS1838
 ------------------
 
 
-| ![](https://github.com/ledoare/pxt-motorbit-IR/raw/master/irController.png) | ![](https://github.com/ledoare/pxt-motorbit-IR/raw/master/motorbit.png) |
+| ![](https://github.com/ledoare/pxt-motorbit-IR/raw/master/irControler.png) | ![](https://github.com/ledoare/pxt-motorbit-IR/raw/master/motorbit.png) |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
 |                                            _Télécommande Mini Remote_                                            |                                   _MotorBit_                                   |
 
@@ -77,40 +78,27 @@ Some sellers could print their logo on controller, but functionality should be s
 * (right)-90
 * (ok)-56
 
-## makerbit.connectIrReceiver
+## motorbitIR.connectIrReceiver
 
 Connects to the IR receiver module at the specified pin.
 <p><b>On Emakefun Motorbit, onboard IR receiver is assigned to pin P1.</b>
 but you can plug any other IR receiver on another pin </p> 
 
 ```sig
-makerbit.connectIrReceiver(DigitalPin.P1, IrProtocol.NEC)
-```
-
-
-### Parameters
-
-- `pin` - digital pin with an attached IR receiver
-
-## irVS1838.connectIrReceiverVisual
-
-Connects to the IR receiver module at the specified pin. Display it on LED matrix.
-[ NOTE ] Display animation take some time. This function was added for log pin during testing.
-
-```sig
-irVS1838.connectIrReceiverVisual(DigitalPin.P0)
+motorbitIR.connectIrReceiver(DigitalPin.P1, IrProtocol.NEC)
 ```
 
 ### Parameters
 
 - `pin` - digital pin with an attached IR receiver
+- <b>Mini Remote</b> works well with IrProtocol.<b>NEC</b>
 
-## irVS1838.onIrButton
+## motorbitIR.onIrButton
 
 Do something when a specific button is pressed or released on the remote control.
 
 ```sig
-irVS1838.onIrButton(IrButton.Ok, IrButtonAction.Pressed, () => {})
+motorbitIR.onIrButton(IrButton.Ok, IrButtonAction.Pressed, () => {})
 ```
 
 ### Parameters
@@ -119,48 +107,40 @@ irVS1838.onIrButton(IrButton.Ok, IrButtonAction.Pressed, () => {})
 - `action`- the trigger action
 - `handler` - body code to run when the event is raised
 
-## irVS1838.irButton
+## motorbitIR.irButton
 
 Returns the code of the IR button that was pressed last. Returns -1 (IrButton.Any) if no button has been pressed yet.
 
 ```sig
-irVS1838.irButton()
+motorbitIR.irButton()
 ```
 
-## irVS1838.onIrDatagram
+## motorbitIR.onIrDatagram
 
 Do something when a specific button is pressed or released on the remote control.
 
 ```sig
-irVS1838.onIrDatagram(() => {})
+motorbitIR.onIrDatagram(() => {})
 ```
 
 ### Parameters
 
 - `handler` - body code to run when the event is raised
 
-## irVS1838.irDatagram
+## motorbitIR.irDatagram
 
 Returns the IR datagram as 32-bit hexadecimal string. The last received datagram is returned or "0x00000000" if no data has been received yet.
 
 ```sig
-irVS1838.irDatagram()
+motorbitIR.irDatagram()
 ```
 
-## irVS1838.wasIrDataReceived
-
-Returns true if any IR data was received since the last call of this function. False otherwise.
-
-```sig
-irVS1838.wasIrDataReceived();
-```
-
-## irVS1838.irButtonCode
+## motorbitIR.irButtonCode
 
 Returns the command code of a specific IR button.
 
 ```sig
-irVS1838.irButtonCode(IrButton.Num9)
+motorbitIR.irButtonCode(IrButton.Number_9)
 ```
 
 ### Parameters
@@ -170,20 +150,9 @@ irVS1838.irButtonCode(IrButton.Num9)
 ## MakeCode Example
 
 ```blocks
+motorbitIR.connectIrReceiver(DigitalPin.P1, IrProtocol.NEC)
 
-irVS1838.connectIrReceiver(DigitalPin.P0)
-
-basic.forever(function () {
-    if (irVS1838.wasAnyIrButtonPressed()) {
-        basic.showNumber(irVS1838.irButton())
-    }
-})
-
-irVS1838.onIrButton(IrButton.OK, IrButtonAction.Pressed, function () {
-    basic.showIcon(IconNames.Heart)
-})
-
-irVS1838.onIrButton(IrButton.OK, IrButtonAction.Released, function () {
+motorbitIR.onIrButton(IrButton.Ok, IrButtonAction.Released, function () {
     basic.showIcon(IconNames.SmallHeart)
 })
 
