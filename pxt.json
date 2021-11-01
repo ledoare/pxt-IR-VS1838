@@ -1,7 +1,7 @@
 {
     "name": "pxt-motorbit-IR",
-    "version": "3.1.1",
-    "description": "MakeCode extension for IR receiver and Mini remote controller",
+    "version": "3.1.2",
+    "description": "MakeCode extension for Emakefun Motorbit IR receiver and Mini remote controller",
     "license": "MIT",
     "dependencies": {
         "core": "*"
