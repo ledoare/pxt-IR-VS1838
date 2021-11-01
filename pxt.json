@@ -12,7 +12,8 @@
         "irControllerDefinition.ts",
         "_locales/cs/pxt-motorbit-IR-strings.json",
         "_locales/de/pxt-motorbit-IR-strings.json",
-        "_locales/fr/pxt-motorbit-IR-strings.json"
+        "_locales/fr/pxt-motorbit-IR-strings.json",
+        "_locales/en/pxt-motorbit-IR-strings.json"
     ],
     "testFiles": [
         "test.ts"
