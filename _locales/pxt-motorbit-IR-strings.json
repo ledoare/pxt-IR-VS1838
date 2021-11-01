@@ -24,14 +24,15 @@
   "IrButtonAction.Pressed|block": "pressed",
   "IrButtonAction.Released|block": "released",
   "irVS1838.connectIrReceiver|block": "connect IR receiver at pin %pin",
+  "irVS1838.connectIrReceiverVisual|block": "connect and display IR receiver at pin %pin",
   "irVS1838.irButtonCode|block": "IR button code %button",
   "irVS1838.irButton|block": "IR button",
   "irVS1838.irDatagram|block": "IR datagram",
   "irVS1838.onIrButton|block": "on IR button | %button | %action",
   "irVS1838.onIrDatagram|block": "on IR datagram received",
   "irVS1838.wasIrDataReceived|block": "IR data was received",
-  "irVS1838|block": "IR VS1838",
+  "irVS1838|block": "Infrared",
   "{id:category}irVS1838": "IR VS1838",
-  "{id:group}Datagram": "Dotagram",
-  "{id:subcategory}Controller": "Mini Slim controller"
+  "{id:group}Datagram": "Datagram",
+  "{id:subcategory}Controller": "Mini controller"
 }
