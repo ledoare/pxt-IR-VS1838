@@ -32,7 +32,7 @@
   "irVS1838.onIrButton|block": "Quand la touche | %button | %action",
   "irVS1838.onIrDatagram|block": "Quand message IR reçu",
   "irVS1838.wasIrDataReceived|block": "Message Infrarouge reçu",
-  "irVS1838|block": "Infrared",
+  "irVS1838|block": "IR VS1838",
   "{id:category}irVS1838": "Infrared",
   "{id:group}Datagram": "Datagram",
   "{id:subcategory}Controller": "Mini Slim controller"
