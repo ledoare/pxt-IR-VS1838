@@ -32,7 +32,7 @@
   "irVS1838.onIrDatagram|block": "wenn IR Datagram empfangen",
   "irVS1838.wasIrDataReceived|block": "IR Daten wurden empfangen",
   "irVS1838|block": "Infrarot",
-  "{id:category}irVS1838": "IR VS1838",
+  "{id:category}Infrared": "IR VS1838",
   "{id:group}Datagram": "Datagram",
   "{id:subcategory}Controller": "Mini Fernbedienung"
 }
