@@ -34,7 +34,7 @@
   "irVS1838.onIrDatagram|block": "Quand message IR reçu",
   "irVS1838.wasIrDataReceived|block": "Message Infrarouge reçu",
   "irVS1838|block": "Infrarouge",
-  "{id:category}irVS1838": "IR VS1838",
+  "{id:category}Infrared": "IR",
   "{id:group}Datagram": "Message IR",
   "{id:subcategory}Controller": "Télécommande"
 }
