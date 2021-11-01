@@ -32,7 +32,7 @@
   "irVS1838.onIrDatagram|block": "on IR datagram received",
   "irVS1838.wasIrDataReceived|block": "IR data was received",
   "irVS1838|block": "Infrared",
-  "{id:category}irVS1838": "IR VS1838",
+  "{id:category}Infrared": "IR VS",
   "{id:group}Datagram": "Datagram",
   "{id:subcategory}Controller": "Mini controller"
 }
