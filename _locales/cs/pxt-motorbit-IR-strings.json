@@ -31,7 +31,7 @@
   "irVS1838.onIrDatagram|block": "když je IR datagram přijat",
   "irVS1838.wasIrDataReceived|block": "IR data byla přijata",
   "irVS1838|block": "Infrared",
-  "{id:category}irVS1838": "Infrared",
+  "{id:category}irVS1838": "IR VS1838",
   "{id:group}Datagram": "Datagram",
   "{id:subcategory}Controller": "Mini Slim ovladač"
 }
