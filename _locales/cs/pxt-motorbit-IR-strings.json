@@ -24,14 +24,15 @@
   "IrButtonAction.Pressed|block": "stisknutí",
   "IrButtonAction.Released|block": "uvolnění",
   "irVS1838.connectIrReceiver|block": "připoj IR přijímač na pin %pin",
+  "irVS1838.connectIrReceiverVisual|block": "připojte, zobrazte IR přijímač na pin %pin",
   "irVS1838.irButtonCode|block": "kód pro IR tlačítko  %button",
   "irVS1838.irButton|block": "IR tlačítko",
   "irVS1838.irDatagram|block": "IR datagram",
   "irVS1838.onIrButton|block": "při | %action IR tlačítka | %button",
   "irVS1838.onIrDatagram|block": "když je IR datagram přijat",
   "irVS1838.wasIrDataReceived|block": "IR data byla přijata",
-  "irVS1838|block": "Infrared",
+  "irVS1838|block": "Infračervený",
   "{id:category}irVS1838": "IR VS1838",
   "{id:group}Datagram": "Datagram",
-  "{id:subcategory}Controller": "Mini Slim ovladač"
+  "{id:subcategory}Controller": "Mini ovladač"
 }
