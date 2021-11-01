@@ -25,15 +25,16 @@
   "IrProtocol.Keyestudio|block": "Keyestudio",
   "IrProtocol.NEC|block": "NEC",
   "IrProtocol.NEC|block": "MiniRemote",
-  "irVS1838.connectIrReceiver|block": "Connecte le récepteur IR à %pin et decode %protocol",
+  "irVS1838.connectIrReceiver|block": "Connecte le récepteur IR à %pin",
+  "irVS1838.connectIrReceiverVisual|block": "Connecte et affiche le récepteur IR à %pin",
   "irVS1838.irButtonCode|block": "Code de la touche %button",
   "irVS1838.irButton|block": "Touche IR",
   "irVS1838.irDatagram|block": "Message IR",
   "irVS1838.onIrButton|block": "Quand la touche | %button | %action",
   "irVS1838.onIrDatagram|block": "Quand message IR reçu",
   "irVS1838.wasIrDataReceived|block": "Message Infrarouge reçu",
-  "irVS1838|block": "IR VS1838",
+  "irVS1838|block": "Infrarouge",
   "{id:category}irVS1838": "IR VS1838",
-  "{id:group}Datagram": "Datagrom",
-  "{id:subcategory}Controller": "Mini Slim controller"
+  "{id:group}Datagram": "Message IR",
+  "{id:subcategory}Controller": "Télécommande"
 }
